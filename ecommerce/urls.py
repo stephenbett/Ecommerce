@@ -54,6 +54,10 @@ urlpatterns = [
     path('remove-from-cart/<int:pk>', views.remove_from_cart_view,name='remove-from-cart'),
     path('customer-address', views.customer_address_view,name='customer-address'),
     path('payment-success', views.payment_success_view,name='payment-success'),
+    
+                # Mpesa/PayPal
+    path('payment/', views.payment, name='Mpayment'),
+    path('payment/execute/', views.payment_execute, name='Mp_payment_execute'),
 
 
 ]
